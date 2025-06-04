@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Rakib Hasan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #007acc;
+      --dark: #111;
+      --light: #f4f4f4;
+      --font: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      line-height: 1.6;
+      background: white;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid var(--primary);
+    }
+
+    nav {
+      background: var(--primary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #005b99;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 0.5rem;
+    }
+
+    .skills ul, .projects ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skills li, .projects li {
+      background: var(--light);
+      padding: 1rem;
+      border-left: 4px solid var(--primary);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .contact-form button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #005b99;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      font-size: 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Md. Rakib Hasan photo" />
+    <h1>Md. Rakib Hasan</h1>
+    <p>Electrical & Electronic Engineering Student | AI Enthusiast | Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an undergraduate student in Electrical and Electronic Engineering with a passion for AI, signal processing, and web development.
+      I enjoy working on innovative projects, learning new technologies, and building systems that solve real-world problems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python (NumPy, Pandas, Matplotlib)</li>
+      <li>MATLAB for Signal Processing</li>
+      <li>LaTeX for Technical Writing</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Machine Learning Basics</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>DCO-OFDM vs ACO-OFDM Analysis</strong><br />
+        Comparative study in VLC systems over AWGN channel using MATLAB.
+      </li>
+      <li>
+        <strong>Simple Portfolio Website</strong><br />
+        Designed a responsive portfolio using HTML/CSS to showcase academic and personal projects.
+      </li>
+      <li>
+        <strong>GPA Calculator (Python)</strong><br />
+        A Python CLI application to calculate GPA based on weighted credit inputs.
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Md. Rakib Hasan. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+
+  <script>
+    // Scroll to top button
+    const topBtn = document.getElementById('topBtn');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
